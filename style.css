@@ -13,6 +13,11 @@ nav{
     margin: 0 auto;
 }
 
+.container p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
 .nav-con{
     display: flex;
     justify-content: space-between;
@@ -37,6 +42,17 @@ a{
 .logo a{
     font-size: 1.5rem;
 }
+
+
+.bg-imgae{
+    background-color: #000000;
+    background-image: url('C:/Users/Dollars/Desktop/ShopOnline-FrontEnd/Background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+
 
 @media screen and (max-width: 390px) {
 
