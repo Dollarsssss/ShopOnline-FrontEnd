@@ -40,14 +40,17 @@ a{
     font-size: 1.5rem;
 }
 
+.bg-color{
+    background-color: #222;
+}
 
-.bg-imgae{
+/* .bg-imgae{
     background-color: #000000;
     background-image: url('C:/Users/Dollars/Desktop/ShopOnline-FrontEnd/Background.jpg');
     background-position: center;
     background-size: cover;
     height: 700px;
-}
+} */
 
 
 
