@@ -66,11 +66,12 @@ a{
 .content {
     padding: 20px;
     background-color: white;
+    width: 165px;
 }
 
-  .content-img img {
+.content-img img {
     height: 100%;
-  }
+}
   
 h2 , h5{
     margin: 1rem 0;
