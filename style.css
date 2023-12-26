@@ -60,14 +60,21 @@ a{
     display: flex;
     margin: 60px 1rem;
     box-shadow: 5px 5px 5px 2px rgba(200, 198, 198, 0.4);
-    border-radius: 10px;
+    border-radius: 20px; /* มุมขวาบนเท่านั้น */
+    overflow: hidden; /* จะทำให้มุมที่ไม่มี border-radius ถูกตัดออก */
 }
 
 .content {
-    padding: 20px;
-    background-color: white;
-    
+   
+ padding: 20px;
+ background-color: white;
+
 }
+
+.content-img {
+    background-color: white;
+}
+
 
   
 h2 , h5{
