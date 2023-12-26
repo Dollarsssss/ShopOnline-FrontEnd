@@ -52,8 +52,9 @@ a{
 
 .container-body{
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item{
@@ -62,13 +63,17 @@ a{
     box-shadow: 5px 5px 5px 2px rgba(200, 198, 198, 0.4);
     border-radius: 20px; /* มุมขวาบนเท่านั้น */
     overflow: hidden; /* จะทำให้มุมที่ไม่มี border-radius ถูกตัดออก */
+    margin-bottom: 0;
+  
 }
 
 .content {
-   
  padding: 20px;
  background-color: white;
-
+ 
+ & h2 ,h5{
+        margin: 1rem 0;  
+ }
 }
 
 .content-img {
@@ -77,9 +82,7 @@ a{
 
 
   
-h2 , h5{
-    margin: 1rem 0;
-}
+
 
 @media screen and (max-width: 390px) {
 
