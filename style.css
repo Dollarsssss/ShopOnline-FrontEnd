@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --white:#fff;
+    --yellow:#ffc200;
+    --black:#000000;
+}
 *{
     margin: 0;
     padding: 0;
@@ -34,10 +40,53 @@ header {
                 margin: 0px 25px;
 
                 & a {
-                    color: #fff;
-                    text-decoration: none;  
+                    color:var(--white);
+                    text-decoration: none;
+                    font-size: 20px;  
                 }
             }
         }
+    }
+
+    & .header_content{
+        display: flex;
+        justify-content: end;
+
+        & .header_info {
+            margin-top: 140px;
+            margin-right: 150px;
+        }
+
+            & .header_title {
+                font-size: 85px;
+                color: var(--yellow);
+            }
+
+                & .header_lorem{
+                color: var(--white);
+                font-size: 30px;
+                margin-top: 40px;
+                }
+
+                    & .header_btn {
+                        display: flex;
+                        width: 244px;
+                        height: 48px;
+                        margin-top: 40px;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--yellow);
+                        border-radius: 5px;
+                        
+
+                            & a{
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 19px;
+                            color: var(--black);
+                            }
+                        
+                    }
     }
 }
