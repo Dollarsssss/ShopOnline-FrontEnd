@@ -38,7 +38,7 @@ header {
             & li {
                 list-style: none;
                 margin-right:80px;
-                
+
                 & a {
                     color:var(--white);
                     text-decoration: none;
@@ -88,5 +88,49 @@ header {
                             }
                         
                     }
+    }
+}
+
+.header_bestseller {
+    height: 800px;
+    background-color: var(--white);
+
+    & .bestseller_content {
+        text-align: center;
+        margin-top: 140px;
+
+        & .h1_bestseller {
+            font-size: 60px;
+        }
+
+        & .p_bestseller {
+            font-size: 20px;
+            margin-top: 35px;
+        }
+    }
+
+    & .card_bestseller {
+
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        text-align: center;
+        margin-top: 75px;
+        
+        & .item {
+            
+            margin-top: 10px;
+
+            & .p_card_title {
+                font-size: 41px;
+                margin-top: 15px;
+            }
+    
+            & .p_card_content {
+                font-size: 16px;
+                margin-top: 25px;
+            }
+
+        }
+       
     }
 }
