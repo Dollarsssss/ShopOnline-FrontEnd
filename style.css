@@ -31,7 +31,7 @@ header {
         justify-content: space-between;
         margin-top: 40px;
 
-        & .menu-nav {
+        & .menu {
             display: flex;
             align-items: center;
             
@@ -69,17 +69,16 @@ header {
                 }
 
                     & .header_btn {
-                        display: flex;
-                        width: 244px;
-                        height: 48px;
-                        margin-top: 40px;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: var(--yellow);
-                        border-radius: 5px;
-                        
-
+                       
                             & a{
+                            display: flex;
+                            width: 244px;
+                            height: 48px;
+                            margin-top: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--yellow);
+                            border-radius: 5px;
                             text-transform: uppercase;
                             text-decoration: none;
                             font-weight: bold;
@@ -87,8 +86,69 @@ header {
                             color: var(--black);
                             }
                         
-                    }
+              }
     }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+
+        height: auto;
+
+         & nav {
+            flex-direction: column  ;
+
+             & .logo {
+                text-align: center;
+
+             }
+
+             & .menu {
+                flex-direction: column;
+               
+
+                & li {
+                    margin-top: 30px;
+                    margin-right: 0;
+                }
+             }
+           
+             
+         }
+
+
+         & .header_content{
+           display: flex;
+           justify-content: center;
+    
+            & .header_info {
+                text-align: center;
+                margin: 0px;
+
+                & .header_title {
+                    font-size: 50px;
+                    margin-top: 50px;
+                    
+                }
+    
+                    & .header_lorem{
+                        font-size: 23px;
+                    }
+    
+                        & .header_btn {
+                         display: flex;
+                         justify-content: center;
+                         margin:20px 0px;
+                        
+                  }
+            }
+    
+                
+        }
+
+
+    }
+   
 }
 
 .header_bestseller {
@@ -117,7 +177,7 @@ header {
         margin-top: 75px;
         
         & .item {
-            
+
             margin-top: 10px;
 
             & .p_card_title {
