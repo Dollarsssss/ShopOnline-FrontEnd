@@ -18,6 +18,7 @@
     margin: 0 auto;
 }
 
+/* Header Start */
 header {
     height: 800px;
     background-image: url("html-template/assets/img/header_bg.png");
@@ -90,6 +91,7 @@ header {
     }
 }
 
+
 @media screen and (max-width: 480px) {
     header {
 
@@ -151,6 +153,11 @@ header {
    
 }
 
+/* Header End */
+
+
+/* Header Bestseller Start */
+
 .header_bestseller {
     height: 800px;
     background-color: var(--white);
@@ -196,12 +203,18 @@ header {
     }
 }
 
+
 @media screen and (max-width: 480px) {
 
     .header_bestseller {
         height: auto;
     }
 }
+
+/* Header Bestseller End */
+
+
+/* Content_Top Start */
 
 .content_top {
     height: 800px;
@@ -324,3 +337,5 @@ header {
     }
     
 }
+
+/* Content_Top End */
