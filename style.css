@@ -161,10 +161,13 @@ header {
 .header_bestseller {
     height: 800px;
     background-color: var(--white);
+    overflow: hidden;
+
 
     & .bestseller_content {
         text-align: center;
         margin-top: 140px;
+        
 
         & .h1_bestseller {
             font-size: 60px;
@@ -177,7 +180,7 @@ header {
     }
 
     & .card_bestseller {
-
+       
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
         text-align: center;
@@ -219,14 +222,14 @@ header {
 .content_top {
     height: 800px;
     background-color: var(--white);
-            
+    background-image: url(html-template/assets/img/content_bg_top.png);
+    background-size: cover;        
+    
     & .container_top {
 
         display: flex;  
-        background-size: cover;
-        background-image: url(html-template/assets/img/content_bg_top.png);
-        background-size: cover;
-        padding: 125px 0px;
+        background-size: cover; 
+   
 
         & .card_top {
             
@@ -339,3 +342,14 @@ header {
 }
 
 /* Content_Top End */
+
+/* Content_Mid Start*/
+
+.content_mid {
+    height: 800px;
+    /* background-image: url(html-template/assets/img/content_bg_mid.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    outline: 1px solid red;
+   
+}
