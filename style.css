@@ -226,8 +226,6 @@ header {
     background-position: center top 170px; 
     background-repeat: no-repeat;
     
- 
-    
 
     & .container_top {
 
@@ -324,7 +322,7 @@ header {
 
             & .content_top_wrapper {
                 margin-left: 0;
-               
+                margin-top: 0;
                 & .content_top_info {
                     display: flex;
                     flex-direction: column;
@@ -352,9 +350,83 @@ header {
 
 .content_mid {
     height: 800px;
-    /* background-image: url(html-template/assets/img/content_bg_mid.png);
+    background-image: url(html-template/assets/img/content_bg_mid.png);
     background-repeat: no-repeat;
-    background-size: cover; */
-    outline: 1px solid red;
+    background-size: cover;
+    overflow: hidden;
+
    
+    & .content_mid_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+
+        & .content_mid_title {
+            font-size: 100px;
+            color: var(--yellow);
+        }
+
+        & .content_mid_lorem {
+            font-size: 25px;
+            color: var(--white);
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+
+    & .content_mid_circle {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+        margin-top: 100px;
+        place-items: center; 
+      
+
+        & .item_circle {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            outline: 5px solid var(--white);
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            
+            
+           
+            & .number{
+                color: var(--yellow);
+                font-size: 50px;
+            }
+
+            & .text{
+                color: var(--white);
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content_mid{
+        height: auto;
+
+        & .content_mid_text {
+
+            & .content_mid_title {
+                font-size: 50px;
+            }
+
+            & .content_mid_lorem {
+                font-size: 23px;
+            }
+        }
+
+        & .content_mid_circle {
+
+            & .item_circle{
+                margin: 20px 0px;
+            }
+        }
+    }
 }
