@@ -194,3 +194,82 @@ header {
        
     }
 }
+
+.content_top {
+    height: 800px;
+    background-color: var(--white);
+    overflow: hidden;
+
+    & .container_top {
+
+        display: flex;  
+        background-size: cover;
+        background-image: url(html-template/assets/img/content_bg_top.png);
+        background-size: cover;
+        padding: 125px 0px;
+
+        & .card_top {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 135px;
+
+        
+            & a img {
+                width: 460px;
+                height: 460px;
+            }
+        }
+
+        & .content_top_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 170px;
+     
+             & .content_top_info {
+                    margin-top: 70px;
+                   
+ 
+                 & .content_top_title {
+                    font-size: 85px;
+                    color: var(--yellow);
+                     
+                 }
+     
+                     & .content_top_lorem{
+                        color: var(--white);
+                        font-size: 25px;
+                        margin-top: 40px;
+                       
+                     }
+     
+                         & .content_top_btn {
+                          display: flex;
+                          
+                          margin:20px 0px;
+                          
+                          & a{
+                            display: flex;
+                            width: 244px;
+                            height: 48px;
+                            margin-top: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--yellow);
+                            border-radius: 5px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-weight: bold;
+                            font-size: 19px;
+                            color: var(--black);
+                            }
+                         
+                   }
+             }
+     
+                 
+         }
+    }
+}
