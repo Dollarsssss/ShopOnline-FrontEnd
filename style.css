@@ -163,7 +163,6 @@ header {
     background-color: var(--white);
     overflow: hidden;
 
-
     & .bestseller_content {
         text-align: center;
         margin-top: 140px;
@@ -223,8 +222,13 @@ header {
     height: 800px;
     background-color: var(--white);
     background-image: url(html-template/assets/img/content_bg_top.png);
-    background-size: cover;        
+    background-size: cover; 
+    background-position: center top 170px; 
+    background-repeat: no-repeat;
     
+ 
+    
+
     & .container_top {
 
         display: flex;  
@@ -237,7 +241,7 @@ header {
             justify-content: center;
             align-items: center;
             margin-left: 135px;
-
+            margin-top: 250px;
         
             & a img {
                 width: 460px;
@@ -250,6 +254,7 @@ header {
             justify-content: center;
             align-items: center;
             margin-left: 170px;
+            margin-top: 300px;
      
              & .content_top_info {
                     margin-top: 70px;
