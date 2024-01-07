@@ -568,7 +568,6 @@ header {
 /* Start content under more*/
 
 .content_under_more {
-    height: 800px;
     background-image: url(html-template/assets/img/content_bg_under_more.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -600,10 +599,12 @@ header {
 @media screen and (max-width: 480px) {
     
     .content_under_more {
-        height: auto;
+   
 
         &   .container_under_more {
-                height: auto;
+
+            height: auto;
+
         & .content_under_more_info {
 
             margin-top: 80px;
@@ -627,3 +628,104 @@ header {
 
 /* End content under more*/
 
+/*Start content_subscribe*/
+ 
+.content_subscribe {
+
+    background-image: url(html-template/assets/img/content_bg_sub.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .container_subscribe{
+        height: 800px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        & .content_subscribe_info{
+
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            text-align: center;
+
+            & h1 {
+                font-size: 100px;
+            }
+
+            & p {
+                font-size: 30px;
+            }
+
+            & form {
+                display: flex;
+                margin-top: 80px;
+
+                & input[type="text"] {
+                    width: 550px;
+                    height: 58px;
+                    border: 0px;
+                    font-size: 23px;
+                    padding-left: 25px;
+                }
+            
+                & input[type="submit"] {
+                    width: 220px;
+                    height: 58px; 
+                    border: 0px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: var(--yellow);
+                    }
+            
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .content_subscribe {
+
+        & .container_subscribe {
+            height: auto;
+        
+        & .content_subscribe_info {
+
+            margin-top: 80px;
+
+            & p{
+                font-size: 20px;
+                margin: 0px 10px;
+            }
+
+            & h1 {
+          
+                margin: 50px 10px;
+                font-size: 50px;
+                }
+
+                & form {
+                    margin: 60px 20px;
+
+                    & input[type="text"]  {
+                        width: 70%;
+                        font-size: 18px;
+                    }
+
+                    & input[type="submit"] {
+                        width: 50%;
+                        font-size: 18px;
+                      
+                        
+                    }
+                }
+
+            }
+        
+        }
+ 
+    }
+} 
