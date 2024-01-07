@@ -4,6 +4,7 @@
     --white:#fff;
     --yellow:#ffc200;
     --black:#000000;
+    --gray:#303030
 }
 *{
     margin: 0;
@@ -729,3 +730,93 @@ header {
  
     }
 } 
+
+/*End Content Subscribe*/
+
+/*Start Content footer*/
+
+footer {
+
+    background-color: var(--gray);
+
+    & .container_footer {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .footer_info {
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            justify-items: center;
+            
+
+            & .footer_item {
+
+                display: flex;
+                flex-direction: column;
+               
+
+                & h1 {
+                    color: var(--white);
+                    font-size: 25px;
+
+                }
+
+                & p {
+                    color: var(--white);
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+
+                & ul {
+                    display: flex;
+
+                    & li{
+                        margin-top: 20px;
+                        margin-right: 10px;
+                        list-style: none;
+
+                            & div {
+                            width: 43px;
+                            height: 43px;
+                            border-radius: 50%;
+                            background-color: var(--white);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            & i {
+                                font-size: 22px
+                                }
+                        }
+                    }
+            }   }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    footer {
+
+        & .container_footer {
+            height: auto;
+        
+            & .footer_info {
+                margin-top: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 20px;
+            }
+
+                & .footer_item {
+                    margin-top: 40px;
+                    padding-bottom: 30px;
+                }
+        }
+    }
+}
