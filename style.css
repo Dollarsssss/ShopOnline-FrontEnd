@@ -561,3 +561,69 @@ header {
     }
     
 }
+
+
+/*content under End*/
+
+/* Start content under more*/
+
+.content_under_more {
+    height: 800px;
+    background-image: url(html-template/assets/img/content_bg_under_more.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    .container_under_more {
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .content_under_more_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center ;
+            
+            & p{
+                font-size: 45px;
+    
+            }
+            & h1 {
+                margin-top: 30px;
+                font-size: 65px;
+    
+                }
+            }
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    .content_under_more {
+        height: auto;
+
+        &   .container_under_more {
+                height: auto;
+        & .content_under_more_info {
+
+            margin-top: 80px;
+
+            & p{
+                font-size: 30px;
+                margin: 0px 10px;
+            }
+
+            & h1 {
+          
+                margin: 50px 10px;
+                font-size: 50px;
+                }
+
+            }
+        }
+    }
+}
+
+
+/* End content under more*/
+
