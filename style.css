@@ -28,27 +28,29 @@ header {
     background-size: cover;
     overflow: hidden;
 
-    & nav {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 40px;
-
-        & .menu {
+  
+        & nav {
             display: flex;
-            align-items: center;
-            
-            & li {
-                list-style: none;
-                margin-right:80px;
+            justify-content: space-between;
+            margin-top: 40px;
 
-                & a {
-                    color:var(--white);
-                    text-decoration: none;
-                    font-size: 20px;  
+            & .menu {
+                display: flex;
+                align-items: center;
+                
+                & li {
+                    list-style: none;
+                    margin-right:80px;
+
+                    & a {
+                        color:var(--white);
+                        text-decoration: none;
+                        font-size: 20px;  
+                    }
                 }
             }
-        }
     }
+
 
     & .header_content{
         display: flex;
@@ -86,10 +88,10 @@ header {
                             font-weight: bold;
                             font-size: 19px;
                             color: var(--black);
-                            }
-                        
-              }
-    }
+                                }
+                            
+                }
+        }
 }
 
 
@@ -220,6 +222,7 @@ header {
 /* Content_Top Start */
 
 .content_top {
+    
     height: 800px;
     background-color: var(--white);
     background-image: url(html-template/assets/img/content_bg_top.png);
@@ -228,8 +231,8 @@ header {
     background-repeat: no-repeat;
     
 
-    & .container_top {
-
+    & .container {
+        
         display: flex;  
         background-size: cover; 
    
@@ -358,6 +361,7 @@ header {
 
    
     & .content_mid_text {
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -443,7 +447,7 @@ header {
     background-repeat: no-repeat;
     
 
-    & .container_under {
+    & .container {
 
         display: flex;  
         background-size: cover; 
@@ -573,7 +577,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
  
-    .container_under_more {
+    .container {
         height: 800px;
         display: flex;
         justify-content: center;
@@ -637,7 +641,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-    & .container_subscribe{
+    & .container{
         height: 800px;
         display: flex;
         align-items: center;
@@ -739,7 +743,7 @@ footer {
 
     background-color: var(--gray);
 
-    & .container_footer {
+    & .container {
         height: 800px;
         display: flex;
         align-items: center;
